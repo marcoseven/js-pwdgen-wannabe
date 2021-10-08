@@ -1,13 +1,20 @@
-// Chiediamo all'utente il suo nome
-const nome = prompt("Qual'è il tuo nome?");
+// Domandiamo all'utente il suo nome
+const first_name = prompt("Qual'è il tuo nome?");
 
-// Chiediamo all'utente il suo cognome
+// Domandiamo all'utente il suo cognome
 const last_name = prompt("Qual'è il tuo cognome?");
 
-// Chiediamo all'utente il suo colore preferito
+// Domandiamo all'utente il suo colore preferito
 const colour = prompt("Qual'è il tuo colore preferito?");
 
-// rispondiamo all'utente mostrandogli il suo nome, cognome e colore preferito + 21
-console.log("Risposte: " + nome + last_name + colour + "21");
-document.getElementById("nome", "last_name", "colour").innerHTML =
-	nome + last_name + colour + "21";
+// risultato delle risposte inserite dall'utente
+const result = first_name + last_name + colour + "21";
+
+// risposte visionate su console
+console.log("Il tuo nome è " + first_name);
+console.log("Il tuo cognome è " + last_name);
+console.log("Il tuo colore preferito è " + colour);
+console.log(result);
+
+// risposte visionate dall'utente
+document.getElementById("answers").innerHTML = result;
