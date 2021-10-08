@@ -1,5 +1,5 @@
 // Chiediamo all'utente il suo nome
-const nome = prompt("Come ti chiami?");
+const nome = prompt("Qual'è il tuo nome?");
 
 // Chiediamo all'utente il suo cognome
 const last_name = prompt("Qual'è il tuo cognome?");
